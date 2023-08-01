@@ -5,6 +5,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { IoMdListBox } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
+import { AiOutlineSearch } from 'react-icons/ai'
 
 
 export default function Menu() {
@@ -56,6 +57,7 @@ export default function Menu() {
                     <button type="submit" className="px-4 py-3 bg-green-500 ">
                         Search
                     </button>
+                    <AiOutlineSearch className='text-green-500 opacity-100' />
                     </form>
                     {weather !== null && (
                     <div className="card bg-gray-400  w-[250px] h-[350px] flex flex-col justify-center items-center mt-10 mx-auto">
