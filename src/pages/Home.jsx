@@ -23,8 +23,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center justify-center h-screen">
           <Time></Time>
-            <h1 className="antialiased text-base font-semibold mt-1">Where ever you go Weatherapp is the solution</h1>
-            <button className="py-3 px-6 w-1/2 font-semibold rounded-md border bg-green-600 hover:bg-green-800 text-sm text-white  mt-14 border-none" onClick={() => navigate("/menu")}>
+            <h1 className="antialiased text-sm font-semibold mt-1">Where ever you go Weatherapp is the solution</h1>
+            <button className="py-3 px-6 w-1/2 font-semibold rounded-md border bg-green-600 hover:bg-green-800 text-sm text-white  mt-10 border-none" onClick={() => navigate("/menu")}>
               Get Started
             </button>
           </div>

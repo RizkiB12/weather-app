@@ -35,9 +35,18 @@ export default function Login() {
                 <button type="submit" className="bg-green-400 text-white mt-3 py-2 px-3 rounded-lg transition ease-in-out hover:bg-green-600" onClick={showAlert}>
                   Login 
                 </button>
-                
               </div>
             </form>
+             {/* Footer start */}
+          <div>
+            <div className="mt-5 pb-10 -mb-3 flex justify-center ">
+              <div className="text-[10px] opacity-50 text-center">
+                <div>Ⓒ Copyright 2023 - All rights reserved</div>
+                <div>Coded by Rizki B. 🔥</div>
+              </div>
+            </div>
+          </div>
+          {/* Footer end */}
           </div>
           {/* Footer Start */}
           <div className="flex justify-around items-center sticky bottom-0 -m-5 px-5 py-4 mt-6 bg-gradient-to-l from-green-600 to-green-500 text-white text-xl">

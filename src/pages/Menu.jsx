@@ -49,7 +49,7 @@ export default function Menu() {
           </div>
           <div className="flex flex-col items-center justify-center">
            <Toaster />
-                <div className="py-4 text-5xl font-serif">Search Weather</div>
+                <div className="py-4 text-5xl sm:text-center font-serif">Search Weather</div>
                 <div className="form">
                     <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="Enter city name" className="px-4 py-3" value={city} onChange={(e) => setCity(e.target.value)} />
@@ -77,6 +77,16 @@ export default function Menu() {
                     )}
                 </div>
           </div>
+           {/* Footer start */}
+           <div>
+            <div className="mt-5 pb-10 -mb-3 flex justify-center ">
+              <div className="text-[10px] opacity-50 text-center">
+                <div>Ⓒ Copyright 2023 - All rights reserved</div>
+                <div>Coded by Rizki B. 🔥</div>
+              </div>
+            </div>
+          </div>
+          {/* Footer end */}
         </div>
         {/* Footer Start */}
         <div className="flex justify-around items-center sticky bottom-0 -m-5 px-5 py-4 mt-6 bg-gradient-to-l from-green-600 to-green-500 text-white text-xl">

@@ -22,10 +22,20 @@ export default function List() {
           <div className="flex flex-col items-center justify-center h-screen">
             <div className="text-3xl font-extrabold mb-5">404</div>
             <div className="text-sm font-medium mb-2">Page LIST not Found</div>
-            <div className="px-5 py-2 text-sm font-semibold text-white bg-green-500 cursor-pointer" onClick={() => navigate("/")}>
+            <div className="px-5 py-2 text-sm font-semibold text-white bg-green-500 hover:bg-green-800 cursor-pointer" onClick={() => navigate("/")}>
               Go Home
             </div>
           </div>
+           {/* Footer start */}
+           <div>
+            <div className="mt-5 pb-10 -mb-3 flex justify-center ">
+              <div className="text-[10px] opacity-50 text-center">
+                <div>Ⓒ Copyright 2023 - All rights reserved</div>
+                <div>Coded by Rizki B. 🔥</div>
+              </div>
+            </div>
+          </div>
+          {/* Footer end */}
         </div>
         {/* Footer Start */}
         <div className="flex justify-around items-center sticky bottom-0 -m-5 px-5 py-4 mt-6 bg-gradient-to-l from-green-600 to-green-500 text-white text-xl">
