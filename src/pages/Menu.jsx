@@ -5,7 +5,6 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { IoMdListBox } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
-import { AiOutlineSearch } from 'react-icons/ai'
 
 
 export default function Menu() {
@@ -55,7 +54,7 @@ export default function Menu() {
                     <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="Enter city name" className="px-4 py-3" value={city} onChange={(e) => setCity(e.target.value)} />
                     <button type="submit" className="px-4 py-3 bg-green-500 ">
-                    <AiOutlineSearch className='text-green-500 opacity-100' /> Search
+                     Search
                     </button>
                     
                     </form>
