@@ -58,11 +58,21 @@ export default function Menu() {
                     </button>
                     </form>
                     {weather !== null && (
-                    <div className="card bg-gray-500  w-[250px] h-[350px] flex flex-col justify-center items-center mt-10 mx-auto">
+                    <div className="card bg-gray-400  w-[250px] h-[350px] flex flex-col justify-center items-center mt-10 mx-auto">
                         <h4 className="text-2xl">{weather.name}</h4>
                         <img src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="" className="w-[50px]" />
                         <h2 className="text-5xl font-bold mb-2">{Math.round(weather.main.temp)}&deg;C</h2>
                         <p>{weather.weather[0].main}</p>
+                        <div className="flex justify-between space-x-6 mt-5">
+                            <div>
+                                <h3 className="text-xl font-bold mb-2">{weather.main.humidity}%</h3>
+                                <p className="text-sm">Humidity</p>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold mb-2">{weather.wind.speed} Km/H</h3>
+                                <p className="text-sm">Wind Speed</p>
+                            </div>
+                        </div>
                     </div>
                     )}
                 </div>
